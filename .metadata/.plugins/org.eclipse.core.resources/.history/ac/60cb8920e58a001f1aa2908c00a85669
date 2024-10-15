@@ -1,0 +1,46 @@
+package testCases;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import pageObjects.AccountRegistrationPage;
+import pageObjects.HomePage;
+import testBase.BaseClass;
+
+public class AccountRegistrationTest {
+	WebDriver driver;
+	WebDriverWait mywait;
+
+	@Test
+	public void verify_account_registration() throws InterruptedException {
+
+		HomePage hp = new HomePage(driver);
+		hp.clickMyAccount();
+		Thread.sleep(Duration.ofSeconds(8));
+
+		hp.clickRegister();
+
+		AccountRegistrationPage rp = new AccountRegistrationPage(driver);
+		rp.setFirstName(randomString().toLowerCase());// random generated string name
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.setLastName(randomString().toUpperCase());//random generated stringName
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.setEmail(randomString()+"@gmail.com");// randomly generated email
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.setPassword("12345abc");
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.setPrivacyPolicy();
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.clickContinue();
+        String confirmsg = rp.getConfirmationMsg();
+        Assert.assertEquals(confirmsg, "Your Account Has Been Created!");
+	}
+
+	
+	
+
+}

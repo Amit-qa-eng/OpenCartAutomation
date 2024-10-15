@@ -1,0 +1,46 @@
+[INFO ] 2024-10-15 19:23:04,669 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,673 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,675 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,675 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,676 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,676 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,677 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,677 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,681 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+[INFO ] 2024-10-15 19:23:04,689 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
+[INFO ] 2024-10-15 19:23:04,690 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,691 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,691 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,692 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,692 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,692 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,694 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,694 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,695 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,695 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,697 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,697 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,697 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,697 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,699 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO ] 2024-10-15 19:23:04,700 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,701 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,701 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,701 Utils.info() - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,701 Utils.info() - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2024-10-15 19:23:04,707 Utils.info() - [TestNG] Running:
+  C:\Users\admin\AppData\Local\Temp\testng-eclipse-1793568610\testng-customsuite.xml
+
+[INFO ] 2024-10-15 19:23:04,722 Utils.info() - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
+[INFO ] 2024-10-15 19:23:07,500 AccountRegTestWithBase.verify_account_registration() - *********Starting AccountRegister***********
+[INFO ] 2024-10-15 19:23:07,576 AccountRegTestWithBase.verify_account_registration() - *********click on myaccount***********
+[INFO ] 2024-10-15 19:23:07,646 AccountRegTestWithBase.verify_account_registration() - *********click on resiter ***********
+[INFO ] 2024-10-15 19:23:08,133 AccountRegTestWithBase.verify_account_registration() - *********providing customer details ***********
+[INFO ] 2024-10-15 19:23:09,411 AccountRegTestWithBase.verify_account_registration() - *********validating expected message  ***********
+[INFO ] 2024-10-15 19:23:09,480 AccountRegTestWithBase.verify_account_registration() - *******test finisehed*********
+[INFO ] 2024-10-15 19:23:09,812 Utils.info() - [TestNG] Time taken by org.testng.reporters.jq.Main@aaee2a2: 75 ms
+[INFO ] 2024-10-15 19:23:09,813 Utils.info() - [TestNG] Time taken by org.testng.reporters.FailedReporter@f3021cb: 0 ms
+[INFO ] 2024-10-15 19:23:09,820 Utils.info() - [TestNG] Time taken by org.testng.reporters.XMLReporter@6ea04618: 7 ms
+[INFO ] 2024-10-15 19:23:09,831 Utils.info() - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@367b22e5: 11 ms
+[INFO ] 2024-10-15 19:23:09,838 Utils.info() - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@38320e34: 6 ms
+[INFO ] 2024-10-15 19:23:09,839 Utils.info() - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3d6a6bee: 0 ms

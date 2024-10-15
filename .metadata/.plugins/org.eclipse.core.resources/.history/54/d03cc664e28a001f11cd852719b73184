@@ -1,0 +1,54 @@
+package testCases;
+
+import java.time.Duration;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import pageObjects.AccountRegistrationPage;
+import pageObjects.HomePage;
+
+public class AccountRegistrationTest  extends BaseClass{
+	WebDriver driver;
+	WebDriverWait mywait;
+
+	
+
+	@Test
+	public void verify_account_registration() throws InterruptedException {
+
+		HomePage hp = new HomePage(driver);
+
+		hp.clickMyAccount();
+		Thread.sleep(Duration.ofSeconds(8));
+
+		hp.clickRegister();
+
+		AccountRegistrationPage rp = new AccountRegistrationPage(driver);
+		rp.setFirstName(randomString().toLowerCase());
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.setLastName(randomString().toUpperCase());
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.setEmail(randomString()+"@gmail.com");// randomly generated email
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.setPassword("12345abc");
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.setPrivacyPolicy();
+		Thread.sleep(Duration.ofSeconds(2));
+		rp.clickContinue();
+
+		String confirmsg = rp.getConfirmationMsg();
+
+		Assert.assertEquals(confirmsg, "Your Account Has Been Created!");
+	}
+
+	
+	
+
+}

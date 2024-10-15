@@ -1,0 +1,32 @@
+package testCases;
+
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import pageObjects.AccountRegistrationPage;
+import pageObjects.HomePage;
+import testBase.Baseclass2;
+
+public class AccountRegTestWithBase extends Baseclass2 {
+
+	  @Test
+	    public void verify_account_registration() throws InterruptedException {
+	        HomePage hp = new HomePage(driver);
+	        hp.clickMyAccount();
+	        mywait.until(ExpectedConditions.elementToBeClickable(hp.lnkRegister)); // Use explicit wait
+	        hp.clickRegister();
+
+	        AccountRegistrationPage rp = new AccountRegistrationPage(driver);
+	        rp.setFirstName(randomString().toLowerCase()); // random generated string name
+	        rp.setLastName(randomString().toUpperCase()); // random generated stringName
+	        rp.setEmail(randomString() + "@gmail.com"); // randomly generated email
+	        rp.setPassword("12345abc");
+	        rp.setConfirmPassword("12345abc");
+	        rp.setPrivacyPolicy();
+	        rp.clickContinue();
+
+	        String confirmsg = rp.getConfirmationMsg();
+	        Assert.assertEquals(confirmsg, "Your Account Has Been Created!");
+	    }
+	
+}

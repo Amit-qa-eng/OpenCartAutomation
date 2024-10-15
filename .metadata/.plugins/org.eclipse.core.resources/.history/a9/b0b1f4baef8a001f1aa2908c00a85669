@@ -1,0 +1,10 @@
+package testCases;
+
+
+import testBase.Baseclass2;
+
+public class AccountRegTestWithBase extends Baseclass2 {
+
+	
+	
+}
